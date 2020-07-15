@@ -1,0 +1,351 @@
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+/*  MOBILE FIRST */
+
+body {
+  color: black;
+  font-family: "Roboto";
+}
+
+/* LOGO */
+.kontejner-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.kontejner-logo h1 {
+  font-size: 32px;
+  padding: 10px;
+}
+
+.kontejner-logo h1 {
+  color: gray;
+}
+
+/* MENU */
+
+nav {
+  background: white;
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.menu a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.logo a:hover {
+  text-decoration: none;
+}
+
+.menu li {
+  font-size: 16px;
+  border-bottom: 0.5px solid rgb(196, 194, 194);
+}
+
+.toggle a {
+  font-size: 20px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  width: 100%;
+  text-align: center;
+}
+
+/* COVER */
+
+.head .titulek {
+  font-family: "Roboto", serif;
+}
+
+/* HEAD  */
+
+.head {
+  position: relative;
+
+  background-image: url(images/2015.png);
+  display: flex;
+  margin: 0;
+  padding: 40px;
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+  color: white;
+  justify-content: space-between;
+  text-align: center;
+
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.head::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.head h1 {
+  font-size: 35px;
+  margin: 0;
+}
+/* kvuli zatemneni */
+.head h1,
+.autor {
+  position: relative;
+}
+
+/* MIDDLE SECTION */
+
+.middle-text h1 {
+  text-align: center;
+
+  padding-top: 30px;
+  font-size: 25px;
+  margin: 0;
+}
+
+.middle-text h2 {
+  text-align: center;
+  font-size: 15px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.middle-text p {
+  padding: 30px 0;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* PHOTOS */
+section img {
+  display: block;
+  padding-bottom: 5px;
+  width: 100%;
+  height: auto;
+}
+
+/* FOOTER */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: black;
+  color: rgb(235, 243, 227);
+  padding: 50px;
+}
+
+.footer-container h1 {
+  color: white;
+  justify-content: space-evenly;
+}
+
+footer {
+  background-color: black;
+  color: rgb(235, 243, 227);
+}
+
+footer .visualio {
+  padding-bottom: 80px;
+text-align: center;
+}
+
+p.info {
+  padding-top: 10px;
+}
+
+/* DESKTOP VERSION  */
+
+@media (min-width: 1281px) {
+  
+    .kontejner {
+    display: flex;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+  }
+
+  
+
+  .kontejner-logo {
+    display: flex;
+    padding-left: 10%;
+    padding-bottom: 0;
+  }
+
+  .kontejner-logo h1 {
+    width: 180px;
+    font-size: 32px;
+    padding-top: 10px;
+    color: gray;
+    text-align: left;
+  }
+
+  .item {
+      padding-left: 50px;
+  }
+
+  .menu li {
+    border-bottom: none;
+  }
+
+  .menu a {
+      padding-top: 50%;
+  }
+
+
+  /* COVER  */
+
+  .head .titulek {
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    font-size: 54px;
+  }
+  
+  .head {
+    position: relative;
+    background-image: url(images/2015_1.png);
+    display: flex;
+    padding: 280px;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    text-align: center;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  }
+
+
+  .middle-text h1 {
+    font-size: 30px;
+    margin: 0;
+    text-align: left;
+
+  }
+  
+  .middle-text h2 {
+    font-size: 15px;
+    margin: 0;
+    font-weight: 500;
+    text-align: left;
+
+  }
+  
+  .middle-text p {
+    padding: 30px 0;
+    font-size: 13px;
+    text-align: left;
+
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column-name {
+    float: left;
+    width: 25%;
+    padding: 10px;
+  }
+  
+  .column-name p {
+    padding: 0;
+    margin: 2px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  section {
+    padding: 50px 30%;
+  }
+
+  .kokon {
+    padding: 70px 0;
+  }
+
+
+  .parent {
+    display: grid;
+    grid-template-columns: 0.5fr 0.4fr 0.5fr repeat(2, 0);
+    grid-template-rows: 1fr 2.5fr 3fr 4fr 0;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    overflow: hidden;
+  }
+  
+  .div1 {
+    grid-area: 1 / 1 / 3 / 3;
+  }
+  .div2 {
+    grid-area: 1 / 3 / 4 / 4;
+  }
+  .div3 {
+    grid-area: 3 / 2 / 5 / 3;
+  }
+  
+
+  /* FOOTER */
+
+.footer-container {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+    background-color: black;
+    color: rgb(235, 243, 227);
+    padding: 50px;
+  }
+  
+  
+  .footer-container h1 {
+    color: white;
+  }
+  
+  
+  footer  {
+    background-color: black;
+    color: rgb(235, 243, 227);
+  }
+  
+  footer .visualio {
+      text-align: left;
+      padding-left: 420px;
+  }
+  
+  p.info  {
+    padding-top: 10px ;
+  }
+
+
+}
+
+}
